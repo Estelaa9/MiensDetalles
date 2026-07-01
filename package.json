@@ -1,0 +1,12 @@
+{
+  "name": "miens-detail",
+  "version": "1.0.0",
+  "description": "Sitio web para Miens - Regalos con amor",
+  "main": "main.js",
+  "scripts": {
+    "dev": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

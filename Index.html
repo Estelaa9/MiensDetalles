@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miens — Regalos con amor</title>
+  <meta name="description"
+    content="Miens: postres artesanales, bolsas de regalo y detalles hechos a mano con amor para los momentos que merecen ser celebrados." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Cormorant+Garamond:ital@1&family=Jost:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+  <div class="scene-3d" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
+
+  <div class="ribbon-top" aria-hidden="true"><span class="ribbon-dot"></span></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo-brand" aria-label="Miens — Regalos con amor">
+        <img src="Image/Logo-miens.png" alt="Miens — regalos con amor" width="140" height="52" />
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+          <span class="visually-hidden">Abrir menú</span>
+        </button>
+        <ul id="navList" class="nav-list">
+          <li><a href="#postres">Postres</a></li>
+          <li><a href="#bolsas">Bolsas de regalo</a></li>
+          <li><a href="#detalles">Detalles</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="eyebrow">Hecho a mano, envuelto con cariño</p>
+          <h1 class="hero-title chrome-text">Cada regalo<br /><em>cuenta una historia</em><br />dulce</h1>
+          <p class="hero-text">Postres artesanales, bolsas de regalo y detalles diseñados para los momentos que merecen
+            ser celebrados.</p>
+          <div class="hero-actions">
+            <a href="#postres" class="btn btn-primary">Ver colección</a>
+            <a href="#contacto" class="btn btn-ghost">Pedidos personalizados</a>
+          </div>
+        </div>
+
+        <div class="hero-carousel hero-3d" id="hero3d">
+          <div class="flex-carousel-wrapper" id="flexCarousel" aria-label="Galería de productos">
+
+            <article class="flex-card active" style="background-image: url('Image/Imagen1.jpg')" tabindex="0">
+              <div class="overlay"></div>
+              <div class="flex-card-content">
+                <p class="flex-card-num">01</p>
+                <h3 class="flex-card-title">Postres artesanales</h3>
+              </div>
+            </article>
+
+            <article class="flex-card" style="background-image: url('Image/Imagen2.jpg')" tabindex="0">
+              <div class="overlay"></div>
+              <div class="flex-card-content">
+                <p class="flex-card-num">02</p>
+                <h3 class="flex-card-title">Bolsas de regalo</h3>
+              </div>
+            </article>
+
+            <article class="flex-card" style="background-image: url('Image/Imagen3.jpg')" tabindex="0">
+              <div class="overlay"></div>
+              <div class="flex-card-content">
+                <p class="flex-card-num">03</p>
+                <h3 class="flex-card-title">Bolsas de regalo</h3>
+              </div>
+            </article>
+
+            <article class="flex-card" style="background-image: url('Image/Imagen4.jpg')" tabindex="0">
+              <div class="overlay"></div>
+              <div class="flex-card-content">
+                <p class="flex-card-num">04</p>
+                <h3 class="flex-card-title">Cheesecake</h3>
+              </div>
+            </article>
+
+            <article class="flex-card" style="background-image: url('Image/Imagen 5.jpg')" tabindex="0">
+              <div class="overlay"></div>
+              <div class="flex-card-content">
+                <p class="flex-card-num">05</p>
+                <h3 class="flex-card-title">Momentos dulces</h3>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories" aria-label="Categorías">
+      <div class="container categories-grid">
+
+        <article class="category-card" id="postres">
+          <svg viewBox="0 0 64 64" class="category-icon" aria-hidden="true">
+            <path d="M16 30 L22 54 a4 4 0 0 0 4 3 h12 a4 4 0 0 0 4-3 L48 30 Z" class="art-wine" />
+            <path d="M14 30 Q32 40 50 30 L50 24 Q32 34 14 24 Z" class="art-gold" />
+          </svg>
+          <h3>Postres</h3>
+          <p>Cupcakes, macarons y tartas hechas con ingredientes seleccionados.</p>
+        </article>
+
+        <article class="category-card" id="bolsas">
+          <svg viewBox="0 0 64 64" class="category-icon" aria-hidden="true">
+            <rect x="16" y="26" width="32" height="28" rx="2" class="art-wine" />
+            <path d="M24 26 V18 a8 8 0 0 1 16 0 v8" class="art-stroke-gold thick" fill="none" />
+          </svg>
+          <h3>Bolsas de regalo</h3>
+          <p>Empaques en kraft, tela y papel, listos para sorprender.</p>
+        </article>
+
+        <article class="category-card" id="detalles">
+          <svg viewBox="0 0 64 64" class="category-icon" aria-hidden="true">
+            <circle cx="32" cy="28" r="10" class="art-gold" />
+            <path d="M32 36 Q26 50 20 56 M32 36 Q38 50 44 56" class="art-stroke-gold" />
+          </svg>
+          <h3>Detalles</h3>
+          <p>Pequeños obsequios y tarjetería para acompañar cada ocasión.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MODELO 3D -->
+    <section class="model-3d" aria-label="Detalle en 3D">
+      <div class="container">
+        <p class="eyebrow center">Mira de cerca</p>
+        <h2 class="section-title chrome-text center">Un detalle, en 3D</h2>
+
+        <div class="model-3d-frame">
+          <model-viewer src="models/postre-gato/scene.gltf" alt="Postre decorativo con temática de gato" camera-controls
+            auto-rotate auto-rotate-delay="1500" rotation-per-second="18deg" shadow-intensity="1" exposure="0.9"
+            environment-image="neutral" loading="eager">
+            <div class="model-3d-loading" slot="poster">Cargando modelo…</div>
+          </model-viewer>
+        </div>
+
+        <p class="model-3d-hint">Arrastra para girar · Desplaza para hacer zoom</p>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS CAROUSEL -->
+    <section class="featured">
+      <div class="container">
+        <div class="featured-header">
+          <div>
+            <p class="featured-label">Artículos destacados</p>
+            <h2 class="section-title chrome-text">Lo más pedido</h2>
+          </div>
+        </div>
+
+        <div class="featured-grid">
+
+          <article class="product-card card-3d">
+            <div class="product-thumb">
+              <img src="Image/Imagen3.jpg" alt="Bolsas de regalo" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Bolsas de regalo</h4>
+              <p class="price">S/ 20.00</p>
+            </div>
+          </article>
+
+          <article class="product-card card-3d">
+            <div class="product-thumb">
+              <img src="Image/Imagen4.jpg" alt="Cheesecake" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h4>Cheesecake</h4>
+              <p class="price">S/ 7.00</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+      <div class="container quote-inner">
+        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+        <p>Estaba muy rico el cheesecake, está bueno para los días que a uno se le antoja algo dulce.</p>
+        <p class="quote-author">— Katy M., clienta</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow center">Pedidos y consultas</p>
+        <h2 class="section-title chrome-text center">¿Lista para sorprender a alguien?</h2>
+        <p class="contact-text">Escríbenos y arma tu pedido a la medida: postres, bolsa y detalles, todo coordinado en
+          un solo paquete.</p>
+        <a href="https://wa.me/51947913074?text=Hola!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20personalizado%20en%20Miens"
+          target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" style="margin-right: 2px;">
+            <path fill="currentColor"
+              d="M12.031 2a9.965 9.965 0 0 0-9.962 9.964c0 1.705.427 3.37 1.233 4.847L2 22l5.35-1.405a9.914 9.914 0 0 0 4.677 1.17h.004a9.968 9.968 0 0 0 9.96-9.965A9.969 9.969 0 0 0 12.031 2zm0 1.834c3.486 0 6.297 2.81 6.299 6.297a6.295 6.295 0 0 1-6.299 6.299h-.003a6.284 6.284 0 0 1-3.216-.889l-.23-.137-3.18.834.85-3.099-.15-.24a6.29 6.29 0 0 1-.963-3.27A6.294 6.294 0 0 1 12.03 3.834zm3.626 5.234c-.198-.1-.1.173-.594-.075-.494-.247-.69-.346-.79-.543a.62.62 0 0 0-.246-.395c-.1-.1-.395-.15-.79-.05a2.235 2.235 0 0 0-.692.346 4.7 4.7 0 0 0-1.186.89 6.36 6.36 0 0 0-1.087 1.383 1.94 1.94 0 0 0-.297.79c.05.395.247.593.395.741l.247.247c.148.148.247.247.297.395a.465 4.65 0 0 0 .197.346c.05.05-.1.593-.198.79a3.837 3.837 0 0 1-.494 1.037c-.1.198-.247.346-.494.346h-.002c-.247-.05-1.038-.346-1.928-1.186a7.48 7.48 0 0 1-1.334-1.63c-.15-.247-.015-.38.12-.515.123-.122.247-.296.37-.444.1-.15.15-.247.247-.395.1-.15.05-.296 0-.395-.05-.1-.494-1.186-.69-1.63-.198-.494-.395-.395-.544-.395h-.445a.86.86 0 0 0-.642.296c-.247.247-.94.939-.94 2.274 0 1.334.988 2.62 1.136 2.818.148.198 1.928 2.916 4.672 4.053.642.247 1.186.444 1.581.593.642.198 1.235.148 1.679.1.494-.074 1.53-.642 1.728-1.235.198-.593.198-1.087.148-1.186-.05-.1-.198-.15-.395-.247z" />
+          </svg>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="logo-brand logo-brand--footer" aria-label="Miens — Regalos con amor">
+        <img src="Image/Logo-miens.png" alt="Miens — regalos con amor" width="110" height="40" />
+      </a>
+      <ul class="social-links">
+        <li><a href="#" aria-label="Instagram">IG</a></li>
+        <li><a href="#" aria-label="Facebook">FB</a></li>
+        <li><a
+            href="https://wa.me/51947913074?text=Hola!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20personalizado%20en%20Miens"
+            target="_blank" rel="noopener" aria-label="WhatsApp">WA</a></li>
+      </ul>
+      <p class="copyright">© 2026 Miens. Regalos con amor.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/51947913074?text=Hola!%20Me%20gustar%C3%ADa%20hacer%20un%20pedido%20personalizado%20en%20Miens"
+    target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">WA</a>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
